@@ -9,10 +9,11 @@
 body {
   background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  border: 1px solid black;
 }
 
 .wrapper {
-  height: auto;
   padding: 1rem;
 }
 nav {
@@ -26,7 +27,7 @@ nav {
 .dropdown {
   position: absolute;
   top: -1;
-  width: 5rem;
+  width: 40%;
   text-align: center;
   background-color: #ffffff;
   list-style-type: none;
@@ -48,28 +49,21 @@ a {
   text-decoration: none;
 }
 
-.content-wrapper {
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .headline {
   width: 60%;
-  font-size: 2rem;
+  font-size: 0.9rem;
 }
 .currency-icon {
   color: #5d51e9;
 }
 .active-value {
   color: #5d51e9;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 .option {
   color: #e5e5e9;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
@@ -88,7 +82,7 @@ a {
   font-weight: 700;
 }
 
-.values p {
+p {
   font-size: 0.5rem;
   opacity: 0.5;
 }
@@ -118,6 +112,6 @@ a {
   height: 180px;
   border-radius: 50%;
   background-image: linear-gradient(to right, #6eaafc, #93eaf7);
-  bottom: -18%;
+  bottom: -30%;
   left: 35%;
 }
