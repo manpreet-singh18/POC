@@ -11,10 +11,12 @@ body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
   border: 1px solid black;
+  position: relative;
+  overflow: hidden;
 }
 
 .wrapper {
-  padding: 1rem;
+  padding: 3rem 2rem;
 }
 nav {
   height: 100%;
@@ -32,9 +34,9 @@ nav {
   background-color: #ffffff;
   list-style-type: none;
   margin: 0;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 6px;
-  font-size: 0.7em;
+  font-size: 1.5rem;
   font-weight: 500;
   display: none;
   opacity: 0.5;
@@ -50,40 +52,40 @@ a {
 }
 
 .headline {
-  width: 60%;
-  font-size: 0.9rem;
+  width: 70%;
+  font-size: 2rem;
 }
 .currency-icon {
   color: #5d51e9;
 }
 .active-value {
   color: #5d51e9;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 .option {
   color: #e5e5e9;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
 .custom-btn {
-  width: 8em;
-  height: 1.8rem;
+  width: 8rem;
+  height: 2.7rem;
   background-image: linear-gradient(to right, #525df7, #8b2efa);
   border: none;
-  border-radius: 14px;
+  border-radius: 20px;
   border-top-left-radius: 0;
   margin-top: 0.6rem;
   text-align: center;
   padding: 0;
-  font-size: 0.6rem;
+  font-size: 1rem;
   color: #ffffff;
   font-weight: 700;
 }
 
 p {
-  font-size: 0.5rem;
+  font-size: 1rem;
   opacity: 0.5;
 }
 
@@ -91,27 +93,27 @@ p {
   position: absolute;
 }
 .top-right-circle {
-  width: 240px;
-  height: 240px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  top: -30%;
-  right: -60%;
   background-color: #e5e5e9;
-  opacity: 0.3;
+  opacity: 0.4;
+  top: -75px;
+  right: -140px;
 }
 .bottom-left-circle {
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-image: linear-gradient(to right, #525df7, #8b2efa);
-  bottom: -15%;
-  left: -6%;
+  bottom: -60px;
+  left: -20px;
 }
 .bottom-right-circle {
-  width: 180px;
-  height: 180px;
+  width: 340px;
+  height: 340px;
   border-radius: 50%;
   background-image: linear-gradient(to right, #6eaafc, #93eaf7);
-  bottom: -30%;
-  left: 35%;
+  bottom: -120px;
+  right: 0;
 }
