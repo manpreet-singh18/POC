@@ -1,0 +1,127 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  height: 17vh;
+  width: 100%;
+  padding: 1rem;
+}
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  position: absolute;
+  top: -1;
+  width: 5rem;
+  text-align: center;
+  background-color: #ffffff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.7em;
+  font-weight: 500;
+  display: none;
+  opacity: 0.5;
+  box-shadow: 5px 5px 5px #e5e5e9;
+  transform: translateX(-100%);
+  border: 1px solid #e5e5e9;
+  z-index: 10;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.content-wrapper {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headline {
+  width: 60%;
+  font-size: 0.9rem;
+}
+.currency-icon {
+  color: #5d51e9;
+}
+.active-value {
+  color: #5d51e9;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.option {
+  color: #e5e5e9;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+button {
+  width: 5.5em;
+  height: 1.8rem;
+  background-image: linear-gradient(to right, #525df7, #8b2efa);
+  border: none;
+  border-radius: 14px;
+  border-top-left-radius: 0;
+  margin-top: 0.6rem;
+  text-align: center;
+}
+
+.values p {
+  font-size: 0.5rem;
+  opacity: 0.5;
+}
+.text {
+  font-size: 0.6rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.circles {
+  position: absolute;
+}
+.top-right-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  top: -30%;
+  right: -60%;
+  background-color: #e5e5e9;
+  opacity: 0.3;
+}
+.bottom-left-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #525df7, #8b2efa);
+  bottom: -15%;
+  left: -6%;
+}
+.bottom-right-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #6eaafc, #93eaf7);
+  bottom: -18%;
+  left: 35%;
+}
