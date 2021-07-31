@@ -76,8 +76,8 @@ a {
   font-weight: 700;
 }
 
-button {
-  width: 5.5em;
+.custom-btn {
+  width: 8em;
   height: 1.8rem;
   background-image: linear-gradient(to right, #525df7, #8b2efa);
   border: none;
@@ -85,16 +85,15 @@ button {
   border-top-left-radius: 0;
   margin-top: 0.6rem;
   text-align: center;
+  padding: 0;
+  font-size: 0.6rem;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .values p {
   font-size: 0.5rem;
   opacity: 0.5;
-}
-.text {
-  font-size: 0.6rem;
-  color: #ffffff;
-  font-weight: 700;
 }
 
 .circles {
