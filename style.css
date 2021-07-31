@@ -14,8 +14,6 @@ body {
 }
 
 .wrapper {
-  height: 17vh;
-  width: 100%;
   padding: 1rem;
 }
 nav {
@@ -60,14 +58,14 @@ a {
 
 .headline {
   width: 60%;
-  font-size: 0.9rem;
+  font-size: 2rem;
 }
 .currency-icon {
   color: #5d51e9;
 }
 .active-value {
   color: #5d51e9;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 .option {
