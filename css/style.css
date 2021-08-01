@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+.body-wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+  padding: 3rem 2rem;
+}
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  position: absolute;
+  top: -1;
+  width: 40%;
+  text-align: center;
+  background-color: #ffffff;
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: none;
+  opacity: 0.5;
+  box-shadow: 5px 5px 5px #e5e5e9;
+  transform: translateX(-100%);
+  border: 1px solid #e5e5e9;
+  z-index: 10;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.headline {
+  width: 70%;
+  font-size: 2rem;
+}
+.loan-heading {
+  color: #5d51e9;
+  font-weight: 700;
+}
+.currency-icon,
+.back-icon {
+  color: #5d51e9;
+}
+
+.active-value {
+  color: #5d51e9;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.option {
+  color: #e5e5e9;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.custom-btn,
+button[type='submit'],
+.submit {
+  width: 8rem;
+  height: 2.7rem;
+  background-image: linear-gradient(to right, #525df7, #8b2efa);
+  border: none;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  margin-top: 0.6rem;
+  text-align: center;
+  padding: 0;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+button[type='submit'],
+.submit {
+  width: 10rem;
+  height: 3.6rem;
+  border-radius: 25px;
+  border-top-left-radius: 0;
+}
+.subheading {
+  font-size: 1rem;
+  opacity: 0.5;
+}
+
+.circles {
+  position: absolute;
+}
+.top-right-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #e5e5e9;
+  opacity: 0.4;
+  top: -75px;
+  right: -140px;
+}
+.bottom-left-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #525df7, #8b2efa);
+  bottom: -60px;
+  left: -20px;
+}
+.bottom-right-circle {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #6eaafc, #93eaf7);
+  bottom: -135px;
+  right: 0;
+}
+
+.bubbles {
+  position: relative;
+}
+.small-bubble {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #6eaafc, #93eaf7);
+  bottom: -55px;
+  left: -20px;
+  z-index: 2;
+}
+.big-bubble {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #525df7, #8b2efa);
+  left: 10px;
+  right: 0;
+  bottom: -15px;
+}
+.loan-app-content {
+  padding: 1.6rem;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #5d51e9;
+}
+
+.form-check p,
+.highlight {
+  width: 320px;
+  color: black;
+  font-size: 0.85rem;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.highlight {
+  color: #5d51e9;
+}
+input[type='text'],
+input[type='password'] {
+  font-weight: 400;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #e5e5e9;
+  transition: scale 1s;
+}
+input[type='text']:focus,
+input[type='password']:focus {
+  transform: scale(1, 1.1);
+  border-color: #5d51e9;
+}
+input[type='radio'] {
+  height: 27px;
+  width: 27px;
+}
+
+.ver_p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  width: 270px;
+  opacity: 0.9;
+}
