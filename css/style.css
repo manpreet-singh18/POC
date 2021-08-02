@@ -30,7 +30,15 @@ label:focus,
   font-family: 'Poppins', sans-serif;
 }
 .wrapper {
-  padding: 3rem 2rem;
+  padding: 3rem 1rem;
+}
+.content-wrapper {
+  padding: 2rem 1rem;
+}
+@media (max-width: 508px) {
+  .content-wrapper {
+    padding-right: 0;
+  }
 }
 nav {
   height: 100%;
@@ -69,9 +77,11 @@ a {
   width: 70%;
   font-size: 2rem;
 }
-.loan-heading {
+.loan-heading,
+.ver-heading {
   color: #5d51e9;
   font-weight: 700;
+  font-size: 1.3rem;
 }
 .currency-icon,
 .back-icon {
@@ -148,6 +158,10 @@ button[type='submit'],
 
 .bubbles {
   position: relative;
+  height: 100%;
+  width: 100%;
+  transform: translate(50%, 100%);
+  z-index: 5;
 }
 .small-bubble {
   width: 100px;
@@ -179,11 +193,13 @@ label {
 
 .form-check p,
 .highlight {
-  width: 320px;
+  width: auto;
   color: black;
   font-size: 0.85rem;
   font-weight: 700;
   opacity: 0.5;
+  display: none;
+  transform: translateY(100%);
 }
 
 .highlight {
@@ -212,4 +228,58 @@ input[type='radio'] {
   font-weight: 400;
   width: 270px;
   opacity: 0.9;
+}
+
+.animate {
+  transform: translateY(100%);
+}
+.info {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+}
+.timer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border: 5px solid #e5e5e9;
+  border-radius: 100%;
+  border-top: 5px solid #5d51e9;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.progress {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+}
+.progress h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #5d51e9;
+}
+.progress p {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.info .small-bubble {
+  top: -5%;
+  left: 80%;
+  opacity: 0.8;
 }
