@@ -23,7 +23,7 @@ label:focus,
 .body-wrapper {
   position: relative;
   width: auto;
-  height: auto;
+  height: 100vh;
   overflow: hidden;
   min-height: 100vh;
   background-color: #ffffff;
@@ -87,18 +87,54 @@ a {
 .back-icon {
   color: #5d51e9;
 }
-
+.swiper-slide {
+  width: 100%;
+}
+.swiper-slide h2,
+.swiper-slide i {
+  display: inline-block;
+  color: #e5e5e9;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  transition: font-size 0.5s;
+}
+.swiper-slide-active h2,
 .active-value {
   color: #5d51e9;
   font-size: 3rem;
   font-weight: 700;
 }
-.option {
+
+.swiper-slide-active i {
+  color: #5d51e9;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+}
+.form-container input[type='text'],
+.form-container input[type='text']::placeholder {
+  font-size: 2rem;
   color: #e5e5e9;
-  font-size: 2.5rem;
   font-weight: 700;
 }
+.swiper-slide-active .form-container [type='text']::placeholder {
+  color: #5d51e9;
+}
+.swiper-slide-active .form-container [type='text'] {
+  color: #5d51e9;
+}
+input[type='text']:focus + label,
+input[type='password']:focus + label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5d51e9;
+}
 
+input[type='checkbox']:checked {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='red' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
 .custom-btn,
 button[type='submit'],
 .submit {
@@ -129,7 +165,9 @@ button[type='submit'],
 
 .circles {
   position: absolute;
+  z-index: 10;
 }
+
 .top-right-circle {
   width: 300px;
   height: 300px;
@@ -148,60 +186,58 @@ button[type='submit'],
   left: -20px;
 }
 .bottom-right-circle {
-  width: 340px;
-  height: 340px;
+  width: 370px;
+  height: 370px;
   border-radius: 50%;
   background-image: linear-gradient(to right, #6eaafc, #93eaf7);
-  bottom: -135px;
-  right: 0;
+  bottom: -155px;
+  left: 130px;
 }
 
-.bubbles {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  transform: translate(50%, 100%);
-  z-index: 5;
-}
 .small-bubble {
+  position: absolute;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-image: linear-gradient(to right, #6eaafc, #93eaf7);
-  bottom: -55px;
-  left: -20px;
-  z-index: 2;
+  left: 70%;
+  top: 280px;
+  z-index: 10;
+  opacity: 1;
 }
 .big-bubble {
+  position: absolute;
   width: 220px;
   height: 220px;
   border-radius: 50%;
   background-image: linear-gradient(to right, #525df7, #8b2efa);
-  left: 10px;
-  right: 0;
-  bottom: -15px;
+  left: 73%;
+  top: 130px;
+  z-index: 9;
+  opacity: 1;
 }
 .loan-app-content {
   padding: 1.6rem;
-}
-
-label {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #5d51e9;
+  right: 0;
 }
 
 .form-check p,
 .highlight {
   width: auto;
+  height: auto;
   color: black;
   font-size: 0.85rem;
   font-weight: 700;
   opacity: 0.5;
   display: none;
   transform: translateY(100%);
+  margin: 0;
 }
 
+.form-check p {
+  margin-top: 1.3rem;
+  margin-left: 1.3rem;
+}
 .highlight {
   color: #5d51e9;
 }
@@ -218,9 +254,10 @@ input[type='password']:focus {
   transform: scale(1, 1.1);
   border-color: #5d51e9;
 }
-input[type='radio'] {
+input[type='checkbox'] {
   height: 27px;
   width: 27px;
+  border-radius: 50%;
 }
 
 .ver_p {
@@ -231,7 +268,8 @@ input[type='radio'] {
 }
 
 .animate {
-  transform: translateY(100%);
+  transform: translateY(-100%);
+  opacity: 0;
 }
 .info {
   position: relative;
@@ -246,9 +284,13 @@ input[type='radio'] {
   width: 200px;
   height: 200px;
   border: 5px solid #e5e5e9;
-  border-radius: 100%;
-  border-top: 5px solid #5d51e9;
+  border-top-color: #5d51e9;
   animation: spin 2s linear infinite;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 @keyframes spin {
   0% {
@@ -257,6 +299,15 @@ input[type='radio'] {
   100% {
     transform: rotate(360deg);
   }
+}
+.animated-circle {
+  position: absolute;
+  background-image: linear-gradient(to right, #525df7, #8b2efa);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 0;
 }
 
 .progress {
@@ -279,7 +330,10 @@ input[type='radio'] {
 }
 
 .info .small-bubble {
+  width: 80px;
+  height: 80px;
   top: -5%;
   left: 80%;
   opacity: 0.8;
+  z-index: 10;
 }

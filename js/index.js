@@ -9,3 +9,8 @@ toggler.addEventListener('click', function (e) {
 toggleClose.addEventListener('click', function (e) {
   t1.reverse();
 });
+
+const swiper = new Swiper('.swiper-container', {
+  setWrapperSize: true,
+  width: 180,
+});
